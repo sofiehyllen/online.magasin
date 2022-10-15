@@ -8,6 +8,11 @@
     <title>offthedome.dk</title>
 
     <script src="https://kit.fontawesome.com/a5ca7cf292.js" crossorigin="anonymous"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +21,8 @@
 
 <body>
     <header>
-        <a href="#"><img src="images/logo.70px.png" alt="logo"></a>
-        <nav>
+        <a href="#"><img src="images/færdige.logo.png" alt="logo" width="16%" height="auto"></a>
+        <nav class="topnav">
             <a href="#">NYHEDER</a>
             
 
@@ -45,19 +50,61 @@
                     <a class="hover-underline-animation" href="#">KONCERT KALENDER</a>
                 </div>
             </li>
-
             <a href="#">INTERVIEWS</a>
-             <a id="searchbutton" href="#">SØG</a>
+
+             <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Søg" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </nav>
 
     </header>
 
 
 
+
+
+
+
+
+
+
+
+    
     <main>
+        <section class="sec-1">
+            <div>
+
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+
+
+
+
+
 
 
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -65,7 +112,7 @@
         <div class="footer">
 
             <div class="col-1">
-                <h2>LINKS</h3>
+                <h2>Links</h3>
                 <a href="#">Om os</a>
                 <a href="#">Kontakt</a>
                 <a href="#">Persondata</a>
@@ -73,7 +120,7 @@
             </div>
 
             <div class="col-2">
-                <h2>HOLD DIG OPDATERET MED VORES NYHEDSBREV</h3>
+                <h2>Hold dig opdateret med vores nyhedsbrev</h3>
                 <form>
                     <input type="email" placeholder="Din e-mail adresse" required>
                     <br>
@@ -82,8 +129,8 @@
             </div>
 
             <div class="col-3">
-                <h2>KONTAKT</h3>
-                <p>Svalevej 1<br>8000 Aarhus</p>
+                <h2>Følg os</h3>
+                
                 <div class="social-icons">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
