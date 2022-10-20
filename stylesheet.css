@@ -1,328 +1,351 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-    
+  margin: 0;
+  padding: 0;    
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
+
+
+/*----MAIN----*/
 main{
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
-/*HEADER*/
+
+
+/*----HEADER----*/
 header{
-    width: 100%;
-    background-color: rgb(30, 30, 30);
-    font-family: 'Khand', sans-serif;
-    font-style: italic;
-    overflow: hidden;
-    display: flex;
-
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+  font-family: 'Khand', sans-serif;
+  font-style: italic;
+  overflow: hidden;
+  display: flex;
 }
 
-/*LOGO*/
+
+
+/*----LOGO----*/
 header img{
-   margin-top: 17px;
-   margin-left: 16px;
-   
-  
+  margin-top: 17px;
+  margin-left: 16px;
 }
 
-/*NAVBAR*/
+
+
+/*----NAVBAR----*/
 nav{
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
+  display: flex;
+  margin-top: 35px;
 }
 
 nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    margin-left: 30px;
-    margin-right: 10px;
-    
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-right: 10px; 
 }
 
 nav a:hover{
-    color: rgb(153, 131, 66);
+  color: rgb(153, 131, 66);
 }
 
-/*DROPDOWN*/
+
+
+/*----NAV.DROPDOWN----*/
 li.dropdown {
-    display: inline-block;
-  }
+  display: inline-block;
+}
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(30,30,30);
-    width: 15%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.0);
-    z-index: 1;
-    padding: 0;
-    margin: 0;
-  }
+  display: none;
+  position: absolute;
+  background-color: rgb(30,30,30);
+  width: 15%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.0);
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
 
-  .dropdown-content a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
+.dropdown-content a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/*----UNDERLINE I DROPDOWN----*/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: rgb(153, 131, 66);
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  top: 70%;
+  background-color: rgb(153, 131, 66);
+  transform-origin: bottom right;
+  transition: transform 0.50s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+/*----RESPONSIV.NAV----*/
+@media only screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
     display: block;
     text-align: left;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-/*UNDERLINE I DROPDOWN*/
-  .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: rgb(153, 131, 66);
-}
-
-  .hover-underline-animation:after {
-    content: '';
-    position: absolute;
     width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    top: 70%;
-    background-color: rgb(153, 131, 66);
-    transform-origin: bottom right;
-    transition: transform 0.50s ease-out;
+    margin: 0;
+    padding: 14px;
   }
-  
-  .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  .topnav img{
+    display: none;
   }
+}
 
 
 
-
-
-
-
-/*SEARCHBAR*/
-
-  
-  @media screen and (max-width: 500px) {
-    .topnav .search-container {
-      float: none;
-    }
-    .topnav a, .topnav input[type=text], .topnav .search-container button {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
-    .topnav input[type=text] {
-      border: 1px solid #ccc;  
-    }}
-
-
-
-    
-    .main-image{
-      position: relative;
-      text-align: center;
-      color: white;
-      height: auto;
-    }
+/*----MAIN.IMAGE.PÅ.FORSIDEN----*/
+.main-image{
+  position: relative;
+  text-align: center;
+  color: white;
+  height: auto;
+}
  
-    .main-image h6{
-      position: absolute;
-      top: 18%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-family: 'Josefin Sans', sans-serif;
-      border-bottom: 1px solid rgb(126, 0, 0);
-    }
+.main-image h6{
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  border-bottom: 1px solid rgb(126, 0, 0);
+}
     
-   .main-image h1{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: rgb(255, 255, 255);
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 60px;
-      font-weight: 1000;
-      width: 1000px;
-      padding-top: 20px;
-    }
+.main-image h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 1000;
+  width: 1000px;
+  padding-top: 20px;
+}
 
-   .main-image h1:hover{
-      color: rgb(180, 0, 0);
-   }
-
-   .star{
-    color: white;
-    position: absolute;
-    top: 20%;
-    left: 41%;
-    font-size: 30px;
-    padding-top: 2%;
-    
-   }
+.main-image h1:hover{
+  color: rgb(180, 0, 0);
+}
 
 
 
-    .cardscontainer{
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      height: 550px;
-      font-family: 'Josefin Sans', sans-serif;
-        
-      margin-top: -1%;
-      background-color: rgb(0, 0, 0);
-      padding-bottom: 70px;
-      padding-top: 70px;
+/*----STJERNER----*/
+.star{
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 41%;
+  font-size: 30px;
+  padding-top: 2%;
+}
+
+.star-sort{
+  color: rgb(153, 131, 66);
+  font-size: 40px;
+  padding-bottom: 60px;
+}
+
+
+
+/*----CARDCONTAINER.FORSIDE----*/
+.cardscontainer{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 450px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: -5px;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.cardscontainer div{
+  width: 300px;
+  text-align: center;
+  background-color: rgb(58, 58, 58);
+  color: white;
+}
+
+.cardscontainer div a{
+  color: rgb(0, 0, 0); 
+}
+
+.cardscontainer div h4{
+  color: white;
+  font-size: 11px;
+}
+
+.cardscontainer div h3{
+  color: white;
+  padding-top: 15px;
+  font-size: 22px;
+  padding: 10px 10px 0 10px;
+}
+
+.hover01 div img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
   }
-  .cardscontainer div{
-      width: 300px;
-      text-align: center;
-      background-color: rgb(30, 30, 30);
-      color: white;
-  }
 
-  .cardscontainer div a{
-    color: rgb(153, 131, 66);
-    
-  }
-  .cardscontainer div h4{
-      color: white;
-      font-size: 11px;
-  }
-
-  .cardscontainer div h3{
-    color: white;
-    padding-top: 15px;
-    font-size: 22px;
-    padding: 10px 10px 0 10px;
-  }
+.hover01 div:hover img {
+  opacity: .5;
+}
 
 
 
-  .hover01 div img {
-    opacity: 1;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
- 
-  }
-  .hover01 div:hover img {
-    opacity: .5;
-  }
+/*----ARTIKLER----*/
+.artikel{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;    
+}
+
+.artikel h6{
+  padding: 80px 0 0 0;
+  margin-bottom: 50px;
   
+}
+
+.artikel h1{
+  font-size: 80px;
+  padding: 0 200px 50px 200px;
+}
+
+.artikel-brødtekst{
+  color: rgb(0, 0, 0);
+  font-family: 'Lora', serif;
+  text-align: justify;
+  padding: 100px 250px 100px 250px;
+  letter-spacing: .5px;
+  line-height: 26px;
+  font-size: 17px;    
+}
+
+.artikel-brødtekst h2{
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.artikel-image{
+  position: relative;
+  left: 30%;
+  padding-top: 70px;
+}
+
+.citat{
+  text-align: center;
+  font-style: italic;
+}
+   
+.spotify{
+  padding-top: 80px;
+}
 
 
 
+/*----FOOTER----*/
+.footer{
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(135, 135, 135);
+  background-color: rgb(30, 30, 30);
+  position: relative;
+  bottom: 0;
+}
+
+.footer div{
+  text-align: center;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*FOOTER*/
-  .footer{
-     width: 100%;
-     padding: 40px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     color: rgb(135, 135, 135);
-     background-color: rgb(30, 30, 30);
-     position: relative;
-     bottom: 0;
-  }
-
-  .footer div{
-    text-align: center;
-  }
-
-/*OVERSKRIFTER*/
+/*----OVERSKRIFTER.FOOTER----*/
 .footer div h2{
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
-/*LINKS*/
+
+
+/*----LINKS.FOOTER----*/
 .col-1 a{
-    display: block;
-    color: rgb(135, 135, 135);
-    margin-bottom: 10px;
-    font-family: 'Josefin Sans', sans-serif;
+  display: block;
+  color: rgb(135, 135, 135);
+  margin-bottom: 10px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-/*NYHEDSBREV*/
+
+
+/*----NYHEDSBREV----*/
 form input{
-    width: 300px;
-    height: 35px;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-    margin-bottom: 40px;
-    text-align: center;
-    background-color: rgb(214, 214, 214);
-    font-family: 'Josefin Sans', sans-serif;
+  width: 300px;
+  height: 35px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: rgb(214, 214, 214);
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-/*TILMELD BUTTON*/
 form button{
-    background: transparent;
-    color: rgb(135, 135, 135);
-    border: 1px solid rgb(135, 135, 135);
-    border-radius: 20px;
-    padding: 8px 23px;
-    cursor: pointer;
-    font-family: 'Josefin Sans', sans-serif;
+  background: transparent;
+  color: rgb(135, 135, 135);
+  border: 1px solid rgb(135, 135, 135);
+  border-radius: 20px;
+  padding: 8px 23px;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 form button:hover{
@@ -330,14 +353,16 @@ form button:hover{
   color: rgb(30, 30, 30);
 }
 
-/*SOCIALE MEDIER*/
+
+
+/*----SOCIALE MEDIER----*/
 .social-icons{
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .social-icons i{
-    font-size: 20px;
-    margin: 10px;
-    cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
 }
   
