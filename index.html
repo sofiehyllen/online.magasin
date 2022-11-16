@@ -5,151 +5,284 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>OffTheDome Hiphop Musik Magasin - Hiphop og rap nyheder og releases</title>
+    <title>Hamanns, Emma 1990</title>
 
     <script src="https://kit.fontawesome.com/a5ca7cf292.js" crossorigin="anonymous"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
-
-
 
 <body>
     <header>
-        <a href="file:///Users/SofieHyllen/Library/CloudStorage/Dropbox/Websites/GitHub/online.magasin/index.html#"><img src="images/færdige.logo.png" alt="logo off the dome" width="30%" height="auto"></a>
-        <nav class="topnav">
-            <a href="file:///Users/SofieHyllen/Library/CloudStorage/Dropbox/Websites/GitHub/online.magasin/nyhed.html">NYHEDER</a>
-            <li class="dropdown">
-            <a href="#">RELEASES</a>
-                <div class="dropdown-content">
-                    <a class="hover-underline-animation" href="#">SINGLES</a>
-                    <a class="hover-underline-animation" href="#">ALBUMS</a>
-                    <a class="hover-underline-animation" href="#">VIDEOER</a>
-                </div>
-            </li>
+        <nav class="puff-in-center" >
+            <div>
+               <a href="#"> <img src="images/logo.stor.png" alt="logo" height="50px" width="auto"></a> 
+            </div>
+            <div class="navbar-left" >
+                <div class="dropdown">
+                    <button class="dropbtn">Menu & takeaway</button>
 
-            <li class="dropdown">
-            <a href="file:///Users/SofieHyllen/Library/CloudStorage/Dropbox/Websites/GitHub/online.magasin/anmeldelse.html">REVIEWS</a>
-                <div class="dropdown-content">
-                    <a class="hover-underline-animation" href="file:///Users/SofieHyllen/Library/CloudStorage/Dropbox/Websites/GitHub/online.magasin/anmeldelse.html">ANMELDELSER</a>
-                    <a class="hover-underline-animation" href="file:///Users/SofieHyllen/Library/CloudStorage/Dropbox/Websites/GitHub/online.magasin/analyse.html#">ANALYSER</a>
-                </div>
-            </li>
+                    <div class="dropdown-content">
+                      <a class="hover-underline-animation" href="#">Morgenmad</a>
+                      <a class="hover-underline-animation" href="#">Frokost</a>
+                      <a class="hover-underline-animation" href="#">Kage & drikke</a>
 
-            <li class="dropdown">
-            <a href="#">EVENTS</a>
-                <div class="dropdown-content">
-                    <a class="hover-underline-animation" href="#">BILLET RELEASE</a>
-                    <a class="hover-underline-animation" href="#">KONCERT KALENDER</a>
-                </div>
-            </li>
-            <a href="#">INTERVIEWS</a>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                  </div> 
+
+                <a href="#">Events</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Shop</button>
+                    <div class="dropdown-content">
+                      <a class="hover-underline-animation" href="#">Kage</a>
+                      <a class="hover-underline-animation" href="#">Glas</a>
+                    </div>
+                  </div>    
+            </div>
+
+            <div class="navbar-right" >
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a id="book-button" href="#">Book Bord</a>
+            </div>
+
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                  <a class="hover-underline-animation-dark" href="#"><li>Menu & takeaway</li></a>
+                  <a class="hover-underline-animation-dark" href="#"><li>Events</li></a>
+                  <a class="hover-underline-animation-dark" href="#"><li>Shop</li></a>
+                </ul>
+              </div>  
         </nav>
-
     </header>
 
-
-
     <main>
-        <section class="main-image">
-            <a href="file:///Users/SofieHyllen/Library/CloudStorage/Dropbox/Websites/GitHub/online.magasin/anmeldelse.html">
-                <img src="images/kanye.skaleret.jpg" alt="kanye west" width="100%">
-                <div class="centered">
-                    <h6>ANMELDELSE</h6>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    <h1>808s & Heartbreak: Kanye West rev sit hjerte ud og uploadede det online</h1>
+        <section class="forside-banner" >
+            <div id="forside-baggrund">
+            <img src="images/forside.baggrund.jpg" alt="Forside">
+            </div>
+
+            <div id="logo" >
+                <img src="images/logo.stor.png" alt="logo" height="300px" width="auto">
+            </div>
+
+            <div id="book-button-forside" >
+                <a href="#">
+                <h1>Book bord</h1>
+                </a>
+            </div>
+
+            
+            <div class="slideshow_sectionINDEX">
+                <div>
+                <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+                    <img src="images/slide1.jpg" alt="slide1">
                 </div>
-            </a>
+                
+                <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+                    <img src="images/slide2.jpg" alt="slide2">
+                </div>
+                
+                <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+                    <img src="images/slide3.jpg" alt="slide3">
+                </div>
+                
+                <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+                    <img src="images/slide4.jpg" alt="slide4">
+                </div>
+
+                <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+                    <img src="images/slide5.jpg" alt="slide5">
+                </div>
+
+                <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+                    <img src="images/slide6.jpg" alt="slide6">
+                </div>
+                
+                <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+                    <img src="images/slide7.jpg" alt="slide7">
+                </div>
+
+                <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+                    <img src="images/slide8.jpg" alt="slide8">
+                </div>
+            </div>
+            
+            <div>
+                <script>
+                var slideIndex = 0;
+                carousel();
+                
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1} 
+                x[slideIndex-1].style.display = "block"; 
+                setTimeout(carousel, 5000); 
+                }
+                </script>
+            </div>
+        </div>
         </section>
 
-
+        <section class="cardsection">
+            <div><img src="images/om.os.jpg" alt="om os"></div>
+            <div>
+                <h1>Om os</h1>
+                <p>
+                    Gennem 30 somre har jeg forelsket mig i alverdens smage og samlet det hele på dette menukort. 
+                    Noget af maden er fra min barndom og tilberedt som min bedstemor gjorde det, andet er fra mit voksne liv - 
+                    fælles for alle retterne er, at det er smage, jeg ikke kan undvære i mit liv.  
+                    Ingen ved hvad fremtiden bringer, men min mad kan jeg stole på - og jeg glæder mig til at servere den for dig.  
+                    Jeg er altid åben overfor at forelske mig i nye sammensætninger og kulinariske udformninger, så menukortet er naturligt organisk foranderligt.
+                    Jeg glæder mig til at byde jer velkommen.
+                </p>
+            </div>
+        </section>
+  
+        
         <section class="cardscontainer">
             <div>
-                <a href="file:///Users/SofieHyllen/Library/CloudStorage/Dropbox/Websites/GitHub/online.magasin/nyhed.html" class="hover01"> 
-                <div class="imageplaceholder"> <img src="images/coolio.skaleret.jpg" alt="coolio" width="300px"></div>
-                <h4>NYHEDER</h4>
-                <hr>
-                <h3>Et endeligt stop i Gangstas Paradise: L.A rapperen Coolio er død</h3>
-                </a>
+                <img src="images/morgenmad.png" alt="morgenmad">
+                <h2>Morgenmad</h2>
+                <h5>Alle dage: 09:00 - 17:00</h5>
+                <p>Prøv vores morgenmad med små fine detaljer, nye smage og smagskombinationer og en anretning som skiller sig ud fra mængden.</p>
+                <a href="#">Se menukortet</a>
             </div>
-
+            
             <div>
-                <a href="file:///Users/SofieHyllen/Library/CloudStorage/Dropbox/Websites/GitHub/online.magasin/analyse.html#" class="hover01">
-                <div class="imageplaceholder"> <img src="images/kanye.jayz.jpg" alt="kanye west og jay-z" width="300px"></div>
-                <h4>ANALYSE</h4>
-                <hr> 
-                <h3>Watch the Thrones 'Murder to Excellence' af Jay-Z og Kanye West</h3>
-                </a>
+                <img src="images/frokost.png" alt="frokost">
+                <h2>Frokost</h2>
+                <h5>Alle dage: 09:00 - 17:00</h5>
+                <p>Vores frokostkort er enkelt og simpelt - dog uden at gå på kompromis med nye og spændende anretninger.</p>
+                <a href="#">Se menukortet</a>
             </div>
-
+            
             <div>
-                <a href="#" class="hover01">
-                <div class="imageplaceholder"> <img src="images/kenny.skaleret.jpg" alt="kendrick lamar" width="300px"></div>
-                <h4>ANMELDELSE</h4>
-                <hr> 
-                <h3>KONCERT: Kendrick Lamar's 'The Big Steppers' tour </h3>
-                </a>
+                <img src="images/kage.png" alt="kage og drikke">
+                <h2>Kage & drikke</h2>
+                <h5>Alle dage: 09:00 - 17:00</h5>
+                <p>I cafén'en har vi altid friskbagte kager, som løbende bliver skiftet ud alt efter sæson og nye ideer.</p>
+                <a href="#">Se menukortet</a>
             </div>
+        </section>
+  
+  
 
-            <div>
-                <a href="#" class="hover01">
-                <div class="imageplaceholder"> <img src="images/stomzy.jpg" alt="stormzy" width="300"></div>
-                <h4>RELEASES</h4>
-                <hr> 
-                <h3>SINGLES: Stormzy udgiver 'Hide & Seek'</h3>
-                </a>
+      
+<!-- RÆKKE ET : -->
+        <section class="instagram_et">
+            <div class="insta_et">
+                <img src="images/instagram1.jpg" alt="instagram1">
+            </div>
+  
+            <div class="insta_to">
+                <img src="images/instagram2.jpg" alt="instagram2">
+            </div>
+  
+            <div class="insta_tre">
+                <img src="images/instagram3.jpg" alt="instagram3">
+            </div>
+        </section>
+  
+<!-- RÆKKE TO: -->
+        <section class="instagram_to">
+            <div class="insta_fire">
+                <img src="images/instagram4.jpg" alt="instagram4">
+            </div>
+  
+            <div class="insta_fem">
+                <img src="images/instagram5.jpg" alt="instagram5">
+            </div>
+              
+            <div class="insta_seks">
+                <img src="images/instagram6.jpg" alt="instagram6">
+            </div>
+        </section>
+  
+<!-- RÆKKE TRE: -->
+        <section class="instagram_tre">
+            <div class="nyhed_fire">
+                <img src="images/instagram7.jpg" alt="instagram7">
+            </div>
+  
+            <div class="nyhed_fem">
+                <img src="images/instagram8.jpg" alt="instagram8">
+            </div>
+  
+            <div class="nyhed_seks">
+                <img src="images/instagram9.jpg" alt="instagram9">
             </div>
         </section>
     </main>
 
 
-
     <footer>
         <div class="footer">
-            <div class="col-1">
-                <h2>Links</h3>
-                <a href="#">Om os</a>
-                <a href="#">Kontakt</a>
-                <a href="#">Persondata</a>
-                <a href="#">Cookies</a>
+            <div id="column-one" >
+                <h1>Kontakt</h1>
+                <p>Gammel Munkegade 5 st.</p>
+                <p>8000 Aarhus C</p>
+                <br>
+                <p>Åbningstider</p>
+                <p>Mandag-fredag: 09:00-18:00</p>
+                <p>Lørdag: 09:30-18:00</p>
+                <p>Søndag: 09:30-18:00</p>
+                <br>
+                <p>Mail: emma@hamanns1990.dk</p>
+                <p>Tlf.: 93 99 07 55</p>
             </div>
 
-            <div class="col-2">
-                <h2>Hold dig opdateret med vores nyhedsbrev</h3>
+            <div id="column-two">
+                <h1>Tilmeld dig vores nyhedsbrev</h1>
                 <form>
-                    <input type="email" placeholder="Din e-mail adresse" required>
+                    <input type="email" placeholder="Din e-mail" required>
                     <br>
-                    <button type="submit">TILMELD</button>
+                    <button type="submit">Tilmeld</button>
                 </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </div>
             </div>
 
-            <div class="col-3">
-                <h2>Følg os</h3>
-                <div class="social-icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram "></i>
-                </div>
+            <div id="column-three" >
+                <h1>Info</h1>
+                <a class="hover-underline-animation" href="#">Smileyrapport</a>
+                <a class="hover-underline-animation" href="#">Handelsbetingelser</a>
+                <a class="hover-underline-animation" href="#">Leveringsinformation</a>
+                <a class="hover-underline-animation" href="#">Ombytning og returnering</a>
+                <a class="hover-underline-animation" href="#">Servicevilkår</a>
+                <a class="hover-underline-animation" href="#">Refusionspolitik</a>
+                <a class="hover-underline-animation" href="#">Job</a>
             </div>
         </div>
     </footer>
 </body>
-</html>
